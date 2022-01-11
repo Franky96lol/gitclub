@@ -1,0 +1,21 @@
+{
+  "name": "gitclub_project",
+  "version": "1.0.0",
+  "description": "A virtual space for developers.",
+  "main": "main.js",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "busboy": "^0.3.1",
+    "cors": "^2.8.5",
+    "cookie-parser": "^1.4.5",
+    "path": "^0.12.7",
+    "socket.io": "^4.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Frank Yoan Rodriguez Perez",
+  "license": "ISC"
+}
