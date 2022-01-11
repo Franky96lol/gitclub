@@ -1,0 +1,124 @@
+body {
+		margin: 0;
+		background: #fff;
+}
+
+/*Background general*/
+header, footer, header button{
+		background: #000/*#2b82ff*/;
+		color: #fff;
+}
+
+/* Estilos del header y sus elementos */
+header {
+		margin: 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+}
+header *{
+		text-transform: uppercase;
+		font-variant-caps: all-small-caps;
+		margin: 3px;
+}
+header>h2{
+		margin: 0px;
+}
+header button{
+		border: none;
+		padding: 3px;
+		box-shadow: 2px 2px 5px black;
+		color:#fff;
+}
+header button:active{
+		box-shadow: none;
+}
+header>nav {
+  margin: 0;
+		display: flex;
+		justify-content: space-between;
+		min-width: 100%;
+		box-sizing: border-box;
+		background: rgba(250,250,250,0.2);
+		margin-top: 5px;
+		
+}
+.btn-header {
+		background: rgba(250,250,250,0.3);
+		border-radius: 4px;
+}
+.btn-header-menu {
+		padding: 5px;
+		width: 30px;
+		height: 20px;
+}
+.btn-header-sesion {
+		border-radius: 50px;
+		border: solid #fff 2px;
+		width: 30px;
+		height: 30px;
+		padding: 4px;
+}
+.btn-header-menu>path {
+		stroke: #fff;
+		stroke-width: 2px;
+}
+.btn-header-sesion>circle {
+		fill: #fff;
+}
+
+/*Contenedor preguntas*/
+#container>div{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #5597ff;
+		font-size: 12px;
+		color: #fff;
+		padding: 5px;
+}
+#container>ul{
+		display: flex;
+		flex-direction: column;
+		list-style-type: none;
+		padding-left: 0;
+		margin: 0;
+}
+#container>ul>li{
+	 list-style: none;
+	 display: grid;
+	 grid: 100px/ 50px auto;
+	 border-bottom: solid #7a7a7a;
+}
+.indicator {
+		background: rgba(0,0,0,0.1);
+}
+.content {
+		padding-left: 5px;
+		color: #5597ff;
+}
+.content small {
+		font-size: 5px;
+}
+.tag {
+		display: flex;
+		padding: 0;
+		list-style: none;
+}
+.tag li {
+		margin-left: 5px;
+		font-size: 10px;
+		padding: 1px 5px;
+		border-radius: 10px;
+		background: #5597ff;
+		color: white;
+}
+
+
+/* Pie de pagina */
+footer{
+		position: fixed;
+		bottom: 0;
+		min-height: 30px;
+		min-width: 100%;
+}
