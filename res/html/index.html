@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>GITCLUB</title>
+		<link rel="stylesheet" href="/styles-css/styleheet-index.css"></link>
+		<link rel="stylesheet" href="/styles-css/stylesheet-login.css"></link>
+</head>
+<body>
+		<header>
+				<svg class="btn-header btn-header-menu">
+						<path d="M 2 02 L28 2"/>
+						<path d="M 2 10 L28 10"/>
+						<path d="M 2 18 L28 18"/>
+				</svg>
+				<h2>&#60;/GitClub/></h2>
+				<svg class="btn-header btn-header-sesion" onclick="seeLogin(true)">
+						<circle cx="15" cy="10" r="8"/>
+						<circle cx="15" cy="30" r="15"/>
+				</svg>
+		</header>
+		
+		<div id="container">
+				<div>Preguntas</div>
+				<ul>
+						<li>
+								<div class="indicator">
+										
+								</div>
+								<div class="content">
+										<h3>Como cambiar el fondo en html</h3>
+										<small>Pregunta hecha por:<span>Rodny</span></small>
+										<ul class="tag">
+												<li>html</li>
+												<li>JavaScript</li>
+										</ul>
+								</div>
+						</li>
+						
+						<li>
+								<div class="indicator">
+										
+								</div>
+								<div class="content">
+										<h3>Agrupar matrices</h3>
+										<small>Pregunta hecha por:<span>Rodny</span></small>
+										<ul class="tag">
+												<li>c++</li>
+										</ul>
+								</div>
+						</li>
+						
+						<li>
+								<div class="indicator">
+										
+								</div>
+								<div class="content">
+										<h3>Usar Catcha en mi web</h3>
+										<small>Pregunta hecha por:<span>Rodny</span></small>
+										<ul class="tag">
+												<li>html</li>
+												<li>javascript</li>
+												<li>jquery</li>
+												<li>ajax</li>
+										</ul>
+								</div>
+						</li>
+						
+				</ul>
+		</div>
+		
+<div class="login-container">
+		<form method="get" class="login">
+				<h2 class="login">&#60;/GITCLUB/></h2>
+				Usuario
+				<input type="text" name="name" placeholder="..." class="login">
+				<br>
+		  ContraseÃ±a
+				<input type="password" name="password" placeholder="..." class="login">
+				<br>
+				<input type="button" value="Acceder" class="login" onclick="openWindowCaptcha()">
+				
+				<div class="dialog-background login">
+						<div class="dialog-window login">
+								<p id="captcha" style="background:white;color:black">
+								</p>
+								<div class="dialog-input login">
+										<input type="text" maxlength="6" placeholder="captcha" id="inputcaptcha" class="login">
+										<input id="change-captcha" type="button" value="ðŸ”„" onclick="actualCaptcha = newCaptcha()">
+								</div>
+								<br>
+								<input type="button" value="Aceptar" class="login" onclick="alert(validateCaptcha())">
+						</div>
+				</div>
+		</form>
+		<a href="auth/register" class="login">Â¿No estas registrado?</a>
+</div>
+		
+		<footer>
+				@Acerca de Nosotros
+				@Contactenos
+		</footer>
+		
+		<script src="/script/script-captcha.js"></script>
+		<script src="/script/script-login.js"></script>
+		<script src="/script/script-index.js"></script>
+</body>
+</html>
